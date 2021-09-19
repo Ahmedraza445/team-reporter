@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+body{
+    background: #F8F8F8;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+.custom-field{
+    position: relative;
+    font-size: 14px;
+    padding-top: 20px;
+    margin-top: 5px;
+}
+
+.custom-field input{
+    padding: 12px;
+    width: 300px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1.5px solid gray;
+    outline-color: deepskyblue;
+}
+
+.custom-field .placeholder{
+    position: absolute;
+    left: 12px;
+    top: calc(50% + 10px);
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.custom-field input:valid + .placeholder,
+.custom-field input:focus + .placeholder{
+    top: 21px;
+    font-size: 10px;
+    color: #222;
+    padding: 5px;
+    background: white;
+}
+
+.message{
+    font-size: 70px;
+    font-family: 'Ubuntu', sans-serif;
+    color: steelblue;
+}
+
+.success{
+    font-size: 18px;
+    margin-top: 15px;
+    color: seagreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.contain{
+    height: 300px;
+    width: 80%;
+    
+
+}
+
+.head {
+position: absolute;
+margin-left: 10%;
+ width: 80%;
+ height: 100px;
+ background-color:white;
+ box-shadow: 0px 4px 6px 0px black;   
+}
+
+.score{
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    margin-left: 500px;
+    background-color: white;
+}
+
+
+.level{
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    background-color: white;
+    margin-left: 70px;
+}
+.mission{
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    margin-left: 200px;
+}
+.level p , .logout p , .score p , .mission p{
+    size: 15px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-left: 25px;
+}
+.mission p{
+    position: absolute;
+}
+
+.logout{
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    margin-left: 850px;
+    padding-top: 25px;
+}
+
+
+.game_container{
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 10%;
+    background-color: #aaa;
+    width: 80%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.balloon_contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 35%;
+    background-color: white;
+    height: 500px;
+}
+.ball {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.pop_ball {
+    height: 70px;
+    margin-left: 90px;
+    margin-top: 10px;
+    width: 70px;
+    position: absolute;
+    border-radius: 50%;
+}

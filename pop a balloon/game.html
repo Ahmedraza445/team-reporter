@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="congrats-div">
+        <h1>CONGRATS!</h1>
+        <a href="./index.html"><p>HOME</p></a>
+        <img src="./img/congrats.gif" alt="">
+    </div>
+    <div class="status-div">
+    </div>
+    <div class="main">
+        <div class="head">
+            <h2 class="tell-color" style="color: white;"></h2>
+            <h2 class="tell-lives" style="color:white"></h2>
+            <h2 class="tell-level" style="color:white"></h2>
+            <button onclick="firebase.auth().signOut()" class="logout">logout</button>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="ball">Pop!</div>
+                <div class="ball">Pop!</div>
+                <div class="ball">Pop!</div>
+                <div class="ball">Pop!</div>
+                <div class="ball">Pop!</div>
+            </div>
+            <div class="row">
+                <div class="ball">Pop!</div>
+                <div class="ball">Pop!</div>
+                <div class="ball">Pop!</div>
+                <div class="ball">Pop!</div>
+                <div class="ball">Pop!</div>
+            </div>
+            <div class="row">
+                <div class="ball">Pop!</div>
+                <div class="ball">Pop!</div>
+                <div class="ball">Pop!</div>
+                <div class="ball">Pop!</div>
+                <div class="ball">Pop!</div>
+            </div>
+            <div class="row">
+                <div class="ball">Pop!</div>
+                <div class="ball">Pop!</div>
+                <div class="ball">Pop!</div>
+                <div class="ball">Pop!</div>
+                <div class="ball">Pop!</div>
+            </div>
+            <div class="row">
+                <div class="ball">Pop!</div>
+                <div class="ball">Pop!</div>
+                <div class="ball">Pop!</div>
+                <div class="ball">Pop!</div>
+                <div class="ball">Pop!</div>
+            </div>
+        </div>
+    </div>
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+   <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+   <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+   <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="./game.js"></script>
+</body>
+
+</html>

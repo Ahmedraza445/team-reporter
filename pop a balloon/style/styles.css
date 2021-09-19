@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.head {
+    position: sticky;
+    background: rgb(0,212,255);
+background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(7,94,68,1) 0%, rgba(95,87,191,1) 0%, rgba(2,0,36,1) 95%);
+    top: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    background: rgb(162,162,162);
+background: radial-gradient(circle, rgba(162,162,162,1) 0%, rgba(0,212,255,1) 0%, rgba(255,255,255,1) 0%, rgba(55,221,255,1) 0%, rgba(255,235,235,1) 67%);
+}
+
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.ball {
+    cursor: default;
+    width: 120px;
+    height: 120px;
+    margin: 50px;
+    line-height: 120px;
+    border: 0px solid white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.congrats-div {
+    display: none;
+    height: 100vh;
+    width: 100%;
+}
+
+.congrats-div p {
+    margin-top: -30vh;
+    font-size: 3em;
+    text-align: center;
+    z-index: 3;
+    position: fixed;
+    left: 45%;
+}
+
+.congrats-div img{
+    position: fixed;
+    top: 0;
+    right: 25%;
+    height: 100vh;
+}
+
+.congrats-div h1{
+    line-height: 70vh;
+    font-size: 6em;
+    margin-left: 30%;
+}
+
+.status-div {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    font-size: 8em;
+    text-align: center;
+    margin: 0;
+    cursor: default;
+}
+
+.status-div img {
+    height: 100vh;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.logout{
+    background-color: red;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    font-size: 1.0em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.logout:hover{
+    background-color: blue;
+    color: white;
+}
